@@ -47,6 +47,9 @@ alias thread='g++ -std=c++1y -l pthread'
 # Git Functions
 # ----------------------
 # Git log find by commit message
-#function glf() { git log --all --grep="$1"; }export PS1='\h:\w \u\$ '
+#function glf() { git log --all --grep="$1"; }
 #export PS1='\h:\w \u\$ '
+#export PS1='\h:${PWD/*\//}#'
+#------------------bash terminal Setting ---------------------------------
+export PS1='\033[1;32m\]\h:\[\033[1;35m\]${PWD/*\//}\[\033[0m\]# ' 
 
